@@ -33,6 +33,26 @@ game.import("extension"，function(lib,game,ui,get,ai,_status){return {name:"扩
 		lib.config.all.characters.push('武将包名英文');
 		if(!lib.config.characters.contains('武将包名英文')) lib.config.characters.push('武将包名英文');
 		lib.translate['武将包名英文_character_config']='武将包名';
+
+		game.import('card',function(){
+			var 卡包名英文={
+				name:'卡包名英文',//卡包命名
+				connect:true,//卡包是否可以联机
+				card:{
+					'卡名':{
+						image:'ext:扩展名/卡名.jpg', //卡牌图片
+						//以下与一般卡牌一样
+					},//卡格式
+				},
+				skill:{},//技能
+				translate:{},//翻译
+				list:[],//牌堆添加
+			};
+			return 卡包名英文;
+		});
+ 		lib.translate['卡包名英文_card_config']='卡包名';
+		lib.config.all.cards.push('卡包名英文');
+		if(!lib.config.cards.contains('卡包名英文')) lib.config.cards.push('卡包名英文');//包名翻译
 	};
 }，help:{},config:{"武将包名英文":{"name":"禁用武将包名英文的武将","init":false}},package:{
     character:{
