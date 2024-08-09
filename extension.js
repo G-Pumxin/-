@@ -44,6 +44,7 @@ game.import("extension"，function(lib,game,ui,get,ai,_status){return {name:"扩
 						//以下与一般卡牌一样
 					},//卡格式
 				},
+				//此处教程缺失，不确定上一行的花括号究竟应该括在哪里
 				skill:{},//技能
 				translate:{},//翻译
 				list:[],//牌堆添加
