@@ -18,7 +18,6 @@ game.import("extension"，function(lib,game,ui,get,ai,_status){return {name:"扩
 				skill:{
 					//直接复制下面的内层的skill，不要translate
 				},
-				},
 				translate:{
 					//character和skill的translate都写在这里
 				},
