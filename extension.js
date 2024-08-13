@@ -1,4 +1,4 @@
-game.import("extension"，function(lib,game,ui,get,ai,_status){return {name:"扩展名"，content:function(config,pack){
+game.import("extension"，function(lib,game,ui,get,ai,_status){return {name:"扩展名",content:function(config,pack){
     if(config.武将包名英文){
 		for(var i in lib.characterPack['武将包名英文']) {
 		if(lib.character[i][4].indexOf("forbidai")<0)lib.character[i][4].push("forbidai");
