@@ -4,7 +4,7 @@ game.import("extension",function(lib，game,ui,get,ai,_status){return {name:"扩
 		if(lib.character[i][4].indexOf("forbidai")<0)lib.character[i][4].push("forbidai");
 		};
 	};
-}，precontent:function(武将包名英文){
+},precontent:function(武将包名英文){
 	if(武将包名英文.enable){
 		game.import('character'，function(){
 			var 武将包名英文={
@@ -55,7 +55,7 @@ game.import("extension",function(lib，game,ui,get,ai,_status){return {name:"扩
 		lib.config.all.cards.push('卡包名英文');
 		if(!lib.config.cards.contains('卡包名英文')) lib.config.cards.push('卡包名英文');//包名翻译
 	};
-}，help:{},config:{"武将包名英文":{"name":"禁用武将包名英文的武将","init":false}},package:{
+},help:{}，config:{"武将包名英文":{"name":"禁用武将包名英文的武将","init":false}}，package:{
     character:{
         character:{
         },
@@ -80,4 +80,4 @@ game.import("extension",function(lib，game,ui,get,ai,_status){return {name:"扩
     diskURL:"",
     forumURL:"",
     version:"1.0",
-}，files:{"character":[],"card":[],"skill":[],"audio":[]}}})
+},files:{"character":[],"card":[],"skill":[],"audio":[]}}})
